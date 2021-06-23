@@ -10,6 +10,7 @@ import { ActivatedRoute } from "@angular/router";
 export class ProfilePage implements OnInit {
   profileId: string;
   character;
+  location;
 
   constructor(
     private http: HttpClient,

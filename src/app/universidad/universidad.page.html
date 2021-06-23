@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Universidad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+
+  <ion-Item *ngFor = "let Universidad of Universidades" [routerLink]="['/home']">
+    <ion-avatar slot="start">
+      <ion-img [src]="Universidad.foto"></ion-img>
+    </ion-avatar>
+    <ion-label>
+  {{Universidad.nombre}} <br>
+  
+  <p>Carreras: </p>
+  {{Universidad.carreras}}
+    </ion-label>
+  </ion-Item>
+
+</ion-list>
+</ion-content>
